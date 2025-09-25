@@ -6,9 +6,10 @@ public class Fibbonacci {
     int num=scan.nextInt();
     int count=0;
 
-    int temp, fib;
-    int fib1=0; 
-    int fib2=1;
+    int fib=0;
+    int temp=0;
+    int f1=0; 
+    int f2=1;
     while(count<=num){
         if(num==0){
             System.out.print("The fibbonacci doesn't exist");
@@ -17,14 +18,14 @@ public class Fibbonacci {
             System.out.print("The fibbonacci is:" + num);
         }
         else{
-            fib=fib1+fib2;
-            temp=fib1;
-            fib1=fib2;
-            fib2=temp;
+            fib=f1+f2;
+            temp=f2;
+            f2=fib;
+            f1=temp;
        }
        count++;
     }
-    System.out.print("The required fibonnacci is:" +fib);
+    System.out.print("The required fibonnacci is:" + fib);
  }
 }
     
