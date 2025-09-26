@@ -18,8 +18,5 @@ public class Prime {
             System.out.print("It is a prime number");
         }
         
-
-
-
     }
 }
